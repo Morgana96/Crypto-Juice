@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="question.css">
+    <link type="text/css" href="pink.flag/css/jplayer.pink.flag.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <style>
+        .finish{ 
+            font-size: 25px;
+            color: white;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .finishdue{ 
+            color: white;
+            font-size: 18px;
+            margin-top: 1px;
+        }
+        .b{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            position: absolute;
+            right: 100px;
+            bottom: 80px;
+    }
+    </style>
+
+    <div>
+        <div class="question">1. What’s your favourite food?</div>
+        <div class="button">
+           <a class="apple" >Apple</a>
+            <a class="steak" >Steak</a>
+        </div>
+        <div class="skip">
+            <a style="position: absolute; bottom: 30px; left: 400px; font-size: 15px; color: rgb(110, 109, 109);" href="network/test.html"> </a>
+        </div>
+        </div>
+    </div>
+    
+    <script>
+        var body = document.querySelector('body');
+        var question = document.querySelector('.question');
+        var btn = document.querySelector('.button');
+        var btn_one = document.querySelector('.apple');
+        var btn_two = document.querySelector('.steak');
+        btn.onclick = function(){
+            question.innerText = '2. Choose a color';
+            btn_one.innerText = 'White';
+            btn_two.innerText = 'Black';
+
+            btn.onclick = function(){
+            question.innerText = '3. Are you a teamplayer?';
+            btn_one.innerText = 'Yes, love ppl';
+            btn_two.innerText = 'Nope, never';
+            
+            btn.onclick = function(){
+            question.innerText = '4. Choose a pastime.';
+            btn_one.innerText = 'troll ppl';
+            btn_two.innerText = 'being god';
+
+            btn.onclick = function(){
+            question.innerText = '5. Is money important to you?';
+            btn_one.innerText = 'Are you srs?';
+            btn_two.innerText = 'Fuck the rich';
+
+            btn.onclick = function(){
+            question.innerText = '6. Do you consider yourself a good person?';
+            btn_one.innerText = 'mom said so';
+            btn_two.innerText = 'lol';
+
+            btn.onclick = function(){
+            question.innerText = '7. Do you value your own freedom?';
+            btn_one.innerText = 'in jail yes';
+            btn_two.innerText = 'what is that?';
+
+            btn.onclick = function(){
+            question.innerText = '8. Are you a  loyal friend?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'what is that?';
+
+            btn.onclick = function(){
+            question.innerText = '9. Would you save an enemy in danger?';
+            btn_one.innerText = 'am I danger?';
+            btn_two.innerText = 'die fucker DIE';
+
+            btn.onclick = function(){
+            question.innerText = '10. Choose a weapon.';
+            btn_one.innerText = 'Spear';
+            btn_two.innerText = 'Bomb';
+
+
+        
+            btn.onclick = function(){
+            question.innerText ='CONGRATULATIONS! You’re a coloniser!';
+            btn_one.innerText = 'Now! Time for business! Invade these lands and mine for crypto! Don’t let the natives stand in your way: show them who’s the boss!';
+            btn_two.innerText = "continue";
+            btn_one.className = 'finishdue';
+            question.className = 'finish';
+            btn.className = 'finish';
+            btn_two.className = 'b';
+            body.style.backgroundColor = 'rgb(39, 36, 36)';
+            body.style.fontWeight = '400';
+
+            btn.onclick = function(){
+                location.href='network/test.html';
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+        }
+       
+        
+
+    type="text/javascript">
+    $(document).ready(function(){
+     $("#jquery_jplayer_1").jPlayer({
+      ready: function () {
+       $(this).jPlayer("setMedia", {
+        m4a: "musica/Test domande.mp3",
+      
+       });
+      },
+      swfPath: "/js",
+      supplied: "m4a, oga"
+     });
+    });
+   </script>
+
+   <div id="jquery_jplayer_1"></div>
+   <div id="jp_container_1" >
+    <a href="#" class="jp-play" >
+        <img src="immagine/outline_volume_off_white_24dp.png" >
+        </a>
+    <a href="#" class="jp-pause">
+        <img src="immagine/outline_pause_white_24dp.png" >
+    </a>
+   </div>
+
+
+<!--
+<div class="container">
+    <audio controls autoplay loop>
+        <source src="musica/Test domande.mp3" type="audio/ogg">
+        <source src="musica/Test domande.mp3" type="audio/mpeg">
+      </audio>
+    </div> -->
+</body>
+</html>

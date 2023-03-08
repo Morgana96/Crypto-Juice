@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="question">1. What’s your favourite food?</div>
+        <div class="button">
+           <a class="apple" >Apple</a>
+            <a class="steak" >Steak</a>
+        </div>
+        </div>
+    </div>
+    
+    <script>
+        var question = document.querySelector('.question');
+        var btn = document.querySelector('.button');
+        var btn_one = document.querySelector('.apple');
+        var btn_two = document.querySelector('.steak');
+        btn.onclick = function(){
+            question.innerText = '2. Choose a color';
+            btn_one.innerText = 'White';
+            btn_two.innerText = 'Black';
+
+            btn.onclick = function(){
+            question.innerText = '3. Are you a teamplayer?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'No';
+            
+            btn.onclick = function(){
+            question.innerText = '4. Choose a pastime.';
+            btn_one.innerText = 'Jogging';
+            btn_two.innerText = 'Shopping';
+
+            btn.onclick = function(){
+            question.innerText = '5. Is money important to you?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'No';
+
+            btn.onclick = function(){
+            question.innerText = '6. Do you consider yourself a good person?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'No';
+
+            btn.onclick = function(){
+            question.innerText = '7. Do you value your own freedom?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'No';
+
+            btn.onclick = function(){
+            question.innerText = '8. Are you loyal to your friends?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'No';
+
+            btn.onclick = function(){
+            question.innerText = '9. Would you save an enemy in danger?';
+            btn_one.innerText = 'Yes';
+            btn_two.innerText = 'No';
+
+            btn.onclick = function(){
+            question.innerText = '10. Choose a weapon.';
+            btn_one.innerText = 'Stear';
+            btn_two.innerText = 'Bomb';
+
+            btn.onclick = function(){
+                location.href = 'finish.html';
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+        }
+       
+    </script>
+
+<div class="container">
+    <audio controls autoplay loop>
+        <source src="musica/Test domande.mp3" type="audio/ogg">
+        <source src="musica/Test domande.mp3" type="audio/mpeg">
+      </audio>
+    </div> 
+</body>
+</html>

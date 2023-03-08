@@ -1,0 +1,42 @@
+  body{
+        background-color:rgb(8, 63, 62);
+        color: white;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+      
+    }
+    .question{
+        font-size: 40px;
+        color: white;
+        margin-top: 40px;
+       
+        margin-left: 50px;
+    }
+    .button{
+        margin-left: 86px;
+        margin-top: 5px;
+        width: 129px;
+    }
+    .button a{
+        margin-top: 40px;
+        float: left;
+        text-decoration: none;
+        padding: 0 18px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+    .apple{
+        background-color: rgb(155,42, 72);
+    }
+    .steak{
+        background-color: rgb(22,11,4);
+    }
+    img{
+        z-index: 100000;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+  

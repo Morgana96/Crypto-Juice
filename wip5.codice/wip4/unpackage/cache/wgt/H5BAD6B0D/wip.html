@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wip</title>
+    <script src="javascript.js"></script>
+    <style>
+        *{
+            background-color: rgb(39, 36, 36);
+            padding: 0;
+            margin: 0;
+        }
+        .title{
+            float: right;
+            margin-right: 67px;
+            margin-top: 30px;
+            width:230px ;
+            height: 130px;
+            background:url(immagine/scritta\ titolo\ provvisoria.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .a{
+           position: fixed;
+           bottom: 100px;
+           right: 90px;
+           width: 180px;
+           height: 50px;
+           background: url(immagine/scritta\ clicca\ qui\ per\ iniziare.png);
+           background-repeat: no-repeat;
+           background-size: contain;
+        }
+        .nav{
+            margin-left: 15px;
+            float: left;
+        }
+        .nav a{
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin-top: 50px;
+            margin-left: 15px;
+        }
+        .icona{
+            background: url(immagine/impostazioni.png),no-repeat;
+            background-size: cover;
+        }
+        .iconc{
+            background: url(immagine/Icona\ Review.png),no-repeat;
+            background-size: cover;
+        }
+        .alto{
+            margin-top: -80px;
+            width: 180px;
+            height: 700px;
+            margin-left: 20px;
+            float: left;
+            background: url(immagine/trivella\ da\ animare\ salire\ alto.png),no-repeat;
+            background-size: cover;
+        }
+        .basso{
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 667px;
+            height: 67px;
+            background: url(immagine/liquido\ base\ fisso.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+<link type="text/css" href="/skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+<link type="text/css" href="skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+    <div class="title"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+         $("#jquery_jplayer_1").jPlayer({
+          ready: function () {
+           $(this).jPlayer("setMedia", {
+            m4a: "musica/Test domande.mp3",
+          
+           });
+          },
+          swfPath: "/js",
+          supplied: "m4a, oga"
+         });
+        });
+       </script>
+       <div id="jquery_jplayer_1"></div>
+       <div id="jp_container_1" >
+        <a href="#" class="jp-play" >
+            <img src="immagine/outline_play_arrow_white_24dp.png" >
+            </a>
+        <a href="#" class="jp-pause">
+            <img src="immagine/outline_pause_white_24dp.png" >
+        </a>
+       </div>
+
+
+     <!--  <div class="container">
+            <audio controls autoplay loop  muted>
+                <source src="musica/Test domande.mp3" type="audio/ogg">
+                <source src="musica/Test domande.mp3" type="audio/mpeg">
+              </audio>
+            </div>--> 
+    <div>
+        <a class="a" href="questiion1.html"></a>
+    </div>
+    
+    <div class="nav">
+        <a class="icona" href="#"></a>
+        <a class="iconc" href="#"></a>
+    </div>
+    <div class="alto">
+
+    </div>
+    <div class="basso"></div>
+    </div>
+
+  
+</body>
+</html>
